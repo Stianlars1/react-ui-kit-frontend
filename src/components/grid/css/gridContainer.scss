@@ -31,6 +31,8 @@
     width: var(--main--content-max-width); // Setting the width
     padding: var(--main-padding);
     z-index: 1;
+    overflow-x: hidden;
+    height: fit-content;
   }
 }
 

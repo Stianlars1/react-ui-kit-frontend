@@ -24,6 +24,9 @@
   width: var(--main--content-max-width);
   padding: var(--main-padding);
   z-index: 1;
+  overflow-x: hidden;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 @media screen and (max-width: 768px) {
