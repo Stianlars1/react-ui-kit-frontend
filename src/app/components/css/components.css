@@ -1,1 +1,6 @@
-/*# sourceMappingURL=components.css.map */
+a .link-logo {
+  color: hsl(var(--primary-foreground-high-contrast));
+}
+a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=components.css.map */

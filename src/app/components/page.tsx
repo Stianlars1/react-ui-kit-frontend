@@ -2,6 +2,8 @@ import { GridMain } from "@/components/grid/grid-components/gridMain/gridMain";
 import { GridMainContentWrapper } from "@/components/grid/grid-components/gridMainContent/components/gridMainContentWrapper";
 import { GridMainContent } from "@/components/grid/grid-components/gridMainContent/gridMainContent";
 import { GridMainHeader } from "@/components/grid/grid-components/gridMainHeader/gridMainHeader";
+import Link from "next/link";
+import { FaLink } from "react-icons/fa";
 import "./css/components.css";
 // Essential Building Blocks for Your Projects
 export default function GetStarted() {
@@ -26,17 +28,14 @@ export default function GetStarted() {
         </p>
 
         <GridMainContentWrapper>
-          <h3>Loader</h3>
-          <p>
-            Ensure your users know what&apos;s happening behind the scenes with
-            our minimalistic Loader component. Perfect for indicating loading
-            states or processing actions, it seamlessly integrates with any
-            design.
-          </p>
-        </GridMainContentWrapper>
-
-        <GridMainContentWrapper>
-          <h3>Button</h3>
+          <h3>
+            <Link
+              aria-label={`Click to check out the Button component`}
+              href={"/components/button"}
+            >
+              Button <FaLink size={14} className="link-logo" />
+            </Link>
+          </h3>
           <p>
             A Button is worth a thousand clicks! Our Button component is crafted
             for immediate integration, offering essential styles that cater to
@@ -46,12 +45,36 @@ export default function GetStarted() {
         </GridMainContentWrapper>
 
         <GridMainContentWrapper>
-          <h3>Card</h3>
+          <h3>
+            <Link
+              aria-label={`Click to check out the Card component`}
+              href={"/components/cards"}
+            >
+              Card <FaLink size={14} className="link-logo" />
+            </Link>
+          </h3>
           <p>
             Display your content elegantly with our Card component. Ideal for
             showcasing pieces of information in a clean, organized manner,
             it&apos;s the perfect starting point for creating listings,
             profiles, or product cards with minimal effort.
+          </p>
+        </GridMainContentWrapper>
+
+        <GridMainContentWrapper>
+          <h3>
+            <Link
+              aria-label={`Click to check out the Loader component`}
+              href={"/components/loader"}
+            >
+              Loader <FaLink size={14} className="link-logo" />
+            </Link>
+          </h3>
+          <p>
+            Ensure your users know what&apos;s happening behind the scenes with
+            our minimalistic Loader component. Perfect for indicating loading
+            states or processing actions, it seamlessly integrates with any
+            design.
           </p>
         </GridMainContentWrapper>
 

@@ -1,0 +1,9 @@
+a {
+  .link-logo {
+    color: hsl(var(--primary-foreground-high-contrast));
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

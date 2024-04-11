@@ -1,5 +1,6 @@
 "use client";
 import { GridMain } from "@/components/grid/grid-components/gridMain/gridMain";
+import { GridMainContent } from "@/components/grid/grid-components/gridMainContent/gridMainContent";
 import { GridMainHeader } from "@/components/grid/grid-components/gridMainHeader/gridMainHeader";
 import { ButtonDemo } from "@/docks/components/button";
 import { ButtonCode } from "@/docks/components/button/index";
@@ -14,14 +15,16 @@ export default function ButtonPage() {
         subtitle="Buttons are used to trigger an action or event"
       />
 
-      <Button variant="default">Default</Button>
-      <Button variant="primary">Primary</Button>
-      <Button variant="secondary">Secondary</Button>
-      <Button variant="ghost">Ghost</Button>
-      <Button variant="outline">Outline</Button>
-      <Button variant="link" href="">
-        Link
-      </Button>
+      <GridMainContent>
+        <Button variant="default">Default</Button>
+        <Button variant="primary">Primary</Button>
+        <Button variant="secondary">Secondary</Button>
+        <Button variant="ghost">Ghost</Button>
+        <Button variant="outline">Outline</Button>
+        <Button variant="link" href="">
+          Link
+        </Button>
+      </GridMainContent>
       {/* <Button variant="icon" href="" border={true}>
         <ShuttleSvg mouseOnCard={false} widthAndHeight={20} />
       </Button>
